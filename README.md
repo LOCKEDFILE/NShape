@@ -1,17 +1,27 @@
-# nshape
+# Flutter 정다각형
 
-A new Flutter project.
+숫자 (n)을 입력받아 정 n각형을 그리는 코드
 
-## Getting Started
+## 사용 법
 
-This project is a starting point for a Flutter application.
+~~~dart
+Widget  nShape({int side}) {
+	return  CustomPaint(
+		painter:  Shape(side: side), // N각형
+		child:  Text(
+			'정 $side 각형',
+			style:  TextStyle(
+				fontSize:  32,
+			),
+		),
+	);
+}
+~~~
 
-A few resources to get you started if this is your first Flutter project:
+## 예시
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![사진](./img/example.jpg)
+ 
+![사진](./img/example2.jpg)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# NShape
+![사진](./img/example3.jpg)
